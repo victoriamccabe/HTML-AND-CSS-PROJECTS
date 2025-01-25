@@ -1,0 +1,158 @@
+/*FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap'); /*'Quintessential Static' front imported from fonts.google.com*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap'); /*'Nunito' front imported from fonts.google.com*/
+
+html{
+    background-color:Cornsilk;
+}
+
+h1{
+    font-family: "Quintessential", serif; /*Font imported from fonts.google.com*/
+    font-size: xxx-large;
+    color: #6CACE4;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+h2, h3, h4 {
+    font-family: "Nunito", serif; /*Font imported from fonts.google.com*/
+    color: #5f5e5e;
+    font-size: large;
+    text-align: left;
+    font-weight: bold;
+}
+
+.text {
+    font-family: "Nunito", serif; /*Font imported from fonts.google.com*/
+    font-size: medium;
+    text-align: left;
+}
+
+hr{
+    border-top: 1px solid #6CACE4;
+}
+
+/*NAV-BAR*/
+
+.nav-bar{
+    position: sticky; /*Creates a sticky element that stays in the same spot in the browser screen*/
+    top: 0; /*Tells the browser to stick the ement at the top of the page baaser on user scrolling*/
+    z-index: 9; /*Sets the stack layer of the navbar to scroll over all elemets*/
+}
+
+.ul-navbar{
+    display: flex; /*Creates a flex containter which will expand or shrink elements to fill the space available to them and place the elements side by side horizontally*/
+    list-style-type: none; /*Removes the default stying for unordered list elements*/
+    align-items: center;
+    margin: -8px -8px 0px -8px; /*The margin order is top, rightm bottom and left. The negative margins will stretch the background beyond the edge of the browser screen*/
+    background-color:#6CACE4;
+}
+
+a{
+    display: block; /*Displays anchor elements vertically on a new line, this was added so the drop down menu displays vertically and not horizontally on the screen*/
+    font-family: "Nunito", serif; /*Font imported from fonts.google.com*/
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    width: 100px;
+    padding: 20px 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in;
+}
+
+a:hover, .drop:hover a:only-of-type /*Only-of-type affects the only child element nested within an element. This will keep the background color blue while hovering and the text white when we move the mouse over anchor elements in the rollover-menu div*/{
+    background-color: #6CACE4;
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+    transition: background-color 0.3s ease-in;
+}
+
+.rollover-menu{
+    display: none; /*Prevents the anchor list in this div from showing on the web browser until otherwise specified*/
+    position: absolute; /*Absolute will position the div element relative to the position of its parent element*/
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/*Creates a trigger effect when the user hovers their mouse over the Recipes link. The trigger will display all elements within the rollover-menu class div element*/
+.drop:hover .rollover-menu{
+    display: block;
+}
+
+.rollover-menu a{
+    color: #6CACE4;
+}
+
+.rollover-menu a:hover{
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(90, 90, 90, 0.2);
+}
+
+.rollover-menu a:nth-child(1){
+    border-top: 5px solid #FFB81C;
+}
+/*This will specifically target the input tags that are nested within the form tags*/
+form input{
+    font-family: "Nunito", serif; /*Font imported from fonts.google.com*/
+    font-size: 15px;
+    color: rgb(165, 165,165);
+    border: 2px solid rgb(165, 165,165);
+    border-radius: 5px;
+    padding: 3px;
+    margin: 10px 15px 10px 0px;
+    transition: 0.3s ease-out; /*Transitions back to light gray when a user clicks away from input field*/
+}
+
+form input:focus{
+    border: 2px solid #FFB81C;
+    color: black;
+    outline: none; /*Removes default border added when the focus pseudo class is triggered*/
+    transition: 0.3s ease-out;
+}
+
+label{
+    font-family: "Nunito", serif; /*Font imported from fonts.google.com*/
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: both; /*Will allow the user to resize the text area both in width and height*/
+    border: 3px solid rgb(165,165,165);
+    border-radius: 5px;
+    font-family: "Nunito", serif; /*Font imported from fonts.google.com*/
+    color: rgb(165,165,165);
+    font-size: 15px;
+    transition: 0.3s ease-out; /*Will transition back to light gray*/
+}
+
+textarea:focus{
+    color: black;
+    border: 3px solid #FFB81C;
+    transition: 0.3 ease-out;
+    outline: none;
+}
+
+input[type="submit"]{
+    background-color: #6CACE4;
+    border: none;
+    font-family: "Nunito", serif; /*Font imported from fonts.google.com*/
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 25px;
+    margin-top: 20px;
+    color: #ffff;
+    cursor: pointer;
+    float: right; /*Positions the submit button to the bottom right of the form*/
+}
+
+input[type="submit"]:hover{
+    background-color: #FFB81C
+}

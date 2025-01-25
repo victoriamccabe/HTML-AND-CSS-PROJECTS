@@ -1,98 +1,147 @@
 <!DOCTYPE html>
-<html>
-<header>
-    
+<html lang="en">
+
+<!--HEADER-->
+
+<head>
+    <!--TITLE-->
+    <title>Argentina</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS\one_page_website.css">
+
     <!--META-->
     <meta charset="UTF-8">
     <meta name="Argentina" content="Information about The Republic of Argentina">
     <meta name="keywords" content="HTML">
     <meta name="source" content="https://www.cia.gov/the-world-factbook/countries/argentina/#introduction">
-    <!--TITLE-->
-    <title >Argentina</title>  
+</head>
 
-    <nav>
-        <ul>
-            <a href="#bacround"><li>Bacrkound</li></a>
-            <a href="#geography"><li>Geography</li></a>
-            <a href="#photo"><li>Photo Gallery</li></a>
-            <a href="#video"><li>Video Gallery</li></a>
-            <a href="#contact_us"><li>Contact Us</li></a>
-            
+<!--BODY-->
+
+<body>
+    <nav class="nav-bar">
+        <ul class="ul-navbar">
+            <a href="#">Home</a>
+            <a href="#background">Background</a>
+            <a href="#geography">Geography</a>
+            <li class="drop"><a href="#gallery">Gallery</a>
+                <div class="rollover-menu">
+                    <a href="#photo">Photos</a>
+                    <a href="#video">Videos</a>
+                </div>
+            </li>
+            <a href="#contact_us">Contact</a>
         </ul>
     </nav>
 
-</header>
-<body style="font-family:Verdana, Geneva, Tahoma, sans-serif">
-    
-    
-    <!--TITLE-->
-    <h1 style=color:DodgerBlue>Argentina</h1>
-    <h4 style=color:DodgerBlue>(South America)</h4>
-    <img src="C:\Users\victo\OneDrive\Documents\HTML-AND-CSS-PROJECTS\One-Page Website\images\Flag_of_Argentina.png" style="height: 56px; width: 100px;">
+
+
+
+    <!--HOME-->
+
+    <h1>Argentina</h1>
+    <h2>(South America)</h2>
+    <img src="images\Flag_of_Argentina.png" alt="Argentina-Flag" style="height: 56px; width: 100px;">
     
     <!--BACKGROUND-->
-    <div  id="background">
-    <h4>Backrgound</h4>
-    <hr>
-    <p>In 1816, the United Provinces of the Río de la Plata declared their independence from Spain. After Bolivia, Paraguay, and Uruguay went their separate ways, the area that remained became Argentina. European immigrants heavily shaped the country's population and culture, with Italy and Spain providing the largest percentage of newcomers from 1860 to 1930. Until about the mid-20th century, much of Argentina's history was dominated by periods of internal political unrest and conflict between civilian and military factions.</p>
-    <p>
-    After World War II, former President Juan Domingo PERÓN -- the founder of the Peronist political movement -- introduced an era of populism, serving three non-consecutive terms in office until his death in 1974. Direct and indirect military interference in government throughout the PERÓN years led to a military junta taking power in 1976. In 1982, the junta failed in its bid to seize the Falkland Islands (Islas Malvinas) by force from the United Kingdom. Democracy was reinstated in 1983 and has persisted despite numerous challenges, the most formidable of which was a severe economic crisis in 2001-02 that led to violent public protests and the successive resignations of several presidents. The years 2003-15 saw Peronist rule by Néstor KIRCHNER (2003-07) and his spouse Cristina FERNÁNDEZ DE KIRCHNER (2007-15), who oversaw several years of strong economic growth (2003-11) followed by a gradual deterioration in the government’s fiscal situation and eventual economic stagnation and isolation. Argentina underwent a brief period of economic reform and international reintegration under Mauricio MACRI (2015-19), but a recession in 2018-19 and frustration with MACRI’s economic policies ushered in a new Peronist government in 2019 led by President Alberto FERNÁNDEZ and Vice President Cristina FERNÁNDEZ DE KIRCHNER. Argentina's high public debts, its pandemic-related inflationary pressures, and systemic monetary woes served as the catalyst for the 2023 elections, culminating with President Javier MILEI's electoral success. Argentina has since eliminated half of its government agencies and is seeking shock therapy to amend taxation and monetary policies.
-    </p><br>
+    <div id="background">
+        <h4>Background</h4>
+        <hr>
+        <div class="text">
+            <p>In 1816, the United Provinces of the Río de la Plata declared their independence from Spain. After
+                Bolivia,
+                Paraguay, and Uruguay went their separate ways, the area that remained became Argentina. European
+                immigrants
+                heavily shaped the country's population and culture, with Italy and Spain providing the largest
+                percentage
+                of newcomers from 1860 to 1930. Until about the mid-20th century, much of Argentina's history was
+                dominated
+                by periods of internal political unrest and conflict between civilian and military factions.</p>
+            <p>
+                After World War II, former President Juan Domingo PERÓN -- the founder of the Peronist political
+                movement --
+                introduced an era of populism, serving three non-consecutive terms in office until his death in 1974.
+                Direct
+                and indirect military interference in government throughout the PERÓN years led to a military junta
+                taking
+                power in 1976. In 1982, the junta failed in its bid to seize the Falkland Islands (Islas Malvinas) by
+                force
+                from the United Kingdom. Democracy was reinstated in 1983 and has persisted despite numerous challenges,
+                the
+                most formidable of which was a severe economic crisis in 2001-02 that led to violent public protests and
+                the
+                successive resignations of several presidents. The years 2003-15 saw Peronist rule by Néstor KIRCHNER
+                (2003-07) and his spouse Cristina FERNÁNDEZ DE KIRCHNER (2007-15), who oversaw several years of strong
+                economic growth (2003-11) followed by a gradual deterioration in the government’s fiscal situation and
+                eventual economic stagnation and isolation. Argentina underwent a brief period of economic reform and
+                international reintegration under Mauricio MACRI (2015-19), but a recession in 2018-19 and frustration
+                with
+                MACRI’s economic policies ushered in a new Peronist government in 2019 led by President Alberto
+                FERNÁNDEZ
+                and Vice President Cristina FERNÁNDEZ DE KIRCHNER. Argentina's high public debts, its pandemic-related
+                inflationary pressures, and systemic monetary woes served as the catalyst for the 2023 elections,
+                culminating with President Javier MILEI's electoral success. Argentina has since eliminated half of its
+                government agencies and is seeking shock therapy to amend taxation and monetary policies.
+            </p><br>
+        </div>
     </div>
 
     <!--GEOGRAPHY-->
-    <div id="geography">
-    <h4>Geography</h4>
-    <hr>
-    <p>
+    <div class="text" id="geography">
+        <h3>Geography</h3>
+        <hr>
+        <p>
         <ul>
-        <li>Location:<br>
-            Southern South America, bordering the South Atlantic Ocean, between Chile and Uruguay</li><br>
-        <li>Geographic coordinates:<br>
-            34 00 S, 64 00 W</li><br>
-        <li>Map references:<br>
-            South America</li><br>
-        <li>Area:<ul>
-            <li>total : 2,780,400 sq km</li>
-            <li>land: 2,736,690 sq km</li>
+            <li>Location: Southern South America, bordering the South Atlantic Ocean, between Chile and Uruguay</li>
+            <li>Geographic coordinates: 34 00 S, 64 00 W</li>
+            <li>Map references: South America</li>
+            <li>Area:<ul>
+                    <li>total : 2,780,400 sq km</li>
+                    <li>land: 2,736,690 sq km</li>
 
-            <li>water: 43,710 sq km</li>
-            </ul></li>
+                    <li>water: 43,710 sq km</li>
+                </ul>
+            </li>
         </ul>
-    </p><br>
+        </p>
     </div>
 
     <!--PHOTO-->
     <div id="photo">
-    <p> 
-        <h4>Photo Gallery</h4>
+        <h3>Photo Gallery</h3>
         <hr>
-
-        <img src="C:\Users\victo\OneDrive\Documents\HTML-AND-CSS-PROJECTS\One-Page Website\images\Buenos-Aires.png" alt="Buenos Aires" width="800" height="450">
-        <img src="C:\Users\victo\OneDrive\Documents\HTML-AND-CSS-PROJECTS\One-Page Website\images\Cerro-Siete-Colores.png" width="800" height="450" alt="Cerro-Siete-Colores">
-        <img src="C:\Users\victo\OneDrive\Documents\HTML-AND-CSS-PROJECTS\One-Page Website\images\Chalten.png" width="800" height="450" alt="Chalten">
-        <img src="C:\Users\victo\OneDrive\Documents\HTML-AND-CSS-PROJECTS\One-Page Website\images\Chalten-2.png" width="800" height="450" alt="Chalten-2">
-        <img src="C:\Users\victo\OneDrive\Documents\HTML-AND-CSS-PROJECTS\One-Page Website\images\Coast.png" width="800" height="450" alt="Beach">
-        <img src="C:\Users\victo\OneDrive\Documents\HTML-AND-CSS-PROJECTS\One-Page Website\images\Iguazu.png" width="800" height="450" atl="Iguazu">
-    </p><br>
+        <div>
+            <img src="images\Buenos-Aires.png" alt="Buenos Aires" width="800" height="450">
+            <img src="images\Cerro-Siete-Colores.png" width="800" height="450" alt="Cerro-Siete-Colores">
+            <img src="images\Chalten.png" width="800" height="450" alt="Chalten">
+            <img src="images\Chalten-2.png" width="800" height="450" alt="Chalten-2">
+            <img src="images\Coast.png" width="800" height="450" alt="Beach">
+            <img src="images\Iguazu.png" width="800" height="450" alt="Iguazu">
+        </div>
     </div>
 
     <!--VIDEO-->
     <div id="video">
-        <h4>Video Gallery</h4>
+        <h3>Video Gallery</h3>
         <hr>
-        <iframe width="800" height="450" src="https://www.youtube.com/embed/_aeUtPM9RYo" title="Wonders of Argentina | The Most Amazing Places in Argentina | Travel Video 4K" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <iframe width="800" height="450" src="https://www.youtube.com/embed/KmNNS-EsgT0" title="10 Best Places to Visit in Argentina - Travel Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/_aeUtPM9RYo"
+            title="Wonders of Argentina | The Most Amazing Places in Argentina | Travel Video 4K" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/KmNNS-EsgT0"
+            title="10 Best Places to Visit in Argentina - Travel Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div><br>
 
     <!--CONTACT US-->
     <div id="contact_us">
-        <h4>Contact Us</h4>
+        <h3>Contact Us</h3>
         <hr>
         <form>
             <input type="text" placeholder="First Name">
             <input type="text" placeholder="Last Name"><br>
-            <input type="phone" placeholder="Phone Number"><br>
+            <input type="tel" placeholder="Phone Number">
             <input type="email" placeholder="Email"><br>
             <textarea placeholder="Type message here..." rows="4" cols="50"></textarea><br>
             <input type="submit" value="Submit">
@@ -102,8 +151,9 @@
 
     <!--FOOTER-->
     <footer>
-            <p style="text-align:center">Argentina</p>
+        <p style="text-align:center">Argentina</p>
     </footer>
 
 </body>
+
 </html>
