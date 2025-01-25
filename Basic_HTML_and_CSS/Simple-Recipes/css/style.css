@@ -174,8 +174,8 @@ p{
 }
 
 .recipe-container{
-    width: 500;
-    height: 350 px;
+    width: 500px;
+    height: 350px;
     margin: 100px auto 180px; /*Shorthand value top. right and left, then bottom*/
     perspective: 1000px; /*Tells the browser how much 3 dimensional space an element should take up on the screen*/
 }
@@ -319,7 +319,7 @@ p{
 
 /*RECIPE BUTTON*/
 
-input[ type="button"]{
+input[type="button"]{
     background-color: #ffff;
     border: none;
     border-radius: 20px;
@@ -331,7 +331,7 @@ input[ type="button"]{
     cursor: pointer;
 }
 
-input[ type="button"]:hover{
+input[type="button"]:hover{
     background-color: rgb(247, 177, 188);
     color: white;
 }
@@ -339,14 +339,18 @@ input[ type="button"]:hover{
 /*ABOUT US*/
 
 .about-us-text{  
-    background-color: rgb(149,238, 233);
-    padding-top: 10px;
-    float: center;
-    width: 48%;
+    font-size: 30px;
     text-align: center;
+
 }
 
+#about-us{
+    font-size: 30px;
+}
 
+#about-us-h2{
+    padding-top: 60px;
+}
 
 
 /*CONTACT FORM CSS*/
