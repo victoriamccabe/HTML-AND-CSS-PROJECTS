@@ -14,6 +14,7 @@
     <meta name="Argentina" content="Information about The Republic of Argentina">
     <meta name="keywords" content="HTML">
     <meta name="source" content="https://www.cia.gov/the-world-factbook/countries/argentina/#introduction">
+    <script src="JS/one_page_website.js" defer></script>
 </head>
 
 <!--BODY-->
@@ -110,14 +111,78 @@
     <div id="photo">
         <h3>Photo Gallery</h3>
         <hr>
-        <div>
-            <img src="images\Buenos-Aires.png" alt="Buenos Aires" width="800" height="450">
-            <img src="images\Cerro-Siete-Colores.png" width="800" height="450" alt="Cerro-Siete-Colores">
-            <img src="images\Chalten.png" width="800" height="450" alt="Chalten">
-            <img src="images\Chalten-2.png" width="800" height="450" alt="Chalten-2">
-            <img src="images\Coast.png" width="800" height="450" alt="Beach">
-            <img src="images\Iguazu.png" width="800" height="450" alt="Iguazu">
-        </div>
+        <div class="row">
+            <div class="column">
+              <img src="images\Buenos-Aires.png" alt="Buenos Aires" onclick="openModal();currentSlide(1)" class="hover-shadow"id="image">
+            </div>
+
+            <div class="column">
+              <img src="images\Cerro-Siete-Colores.png"  alt="Cerro-Siete-Colores" onclick="openModal();currentSlide(2)" class="hover-shadow"id="image">
+            </div>
+           
+            <div class="column">
+              <img src="images\Chalten.png"  alt="Chalten" onclick="openModal();currentSlide(3)" class="hover-shadow" id="image">
+            </div>
+            
+            <div class="column">
+              <img src="images\Iguazu.png" alt="Iguazu" onclick="openModal();currentSlide(4)" class="hover-shadow" id="image">
+            </div>
+</div>
+            <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="images/Buenos-Aires.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/Cerro-Siete-Colores.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="images/Chalten.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/Iguazu.png" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="images/Buenos-Aires.png" onclick="currentSlide(1)" alt="Buenos Aires" width="50%"" height="50%">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="images/Cerro-Siete-Colores.png" onclick="currentSlide(2)" alt="Cerro Siete Colores" width="50%"" height="50%">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="images/Chalten.png" onclick="currentSlide(3)" alt="El Chalten" width="50%"" height="50%">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="images/Iguazu.png" onclick="currentSlide(4)" alt="Iguazu Falls" width="50%"" height="50%">
+      </div>
+    </div>
+  </div>
+          </div>
     </div>
 
     <!--VIDEO-->
