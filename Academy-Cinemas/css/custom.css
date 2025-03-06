@@ -310,3 +310,19 @@ footer{
     width: auto;
     height: 130px;
 }
+
+/*Popovers*/
+
+.star-rating {
+    width: 80%;
+}
+
+/*Toast*/
+
+.custom-toast { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
