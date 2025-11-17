@@ -71,7 +71,6 @@ $(document).on("scroll", function() {
         //The margin for the drop menu is now returned to it's original amount
         $("div.navbar-collapse").css("marign-top", "14px");
     }
-});
     //Close mobile menu when a navigation link is clicked
     $(document).ready(function(){
         //On click when an element contains just the nav-link class and not the dropdown-toggle and then also close when an element with the class .dropdown-item (each movie link) has been clicked
@@ -79,4 +78,5 @@ $(document).on("scroll", function() {
             //Collapse the navbar when a link or dropdown item is clicked
             $(".navbar-collapse").collapse('hide');        
     });
+})
 });
